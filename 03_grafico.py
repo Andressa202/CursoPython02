@@ -16,7 +16,7 @@ cores_map = dict(
     Python = "green",
     SQl = "yellow",
     Golang = "blue",
-    Javascrip = "pink"
+    Javascript = "pink"
 )
 app = dash.Dash(__name__)
 app.layout = html.Div([
@@ -42,7 +42,7 @@ app.layout = html.Div([
 # Uma função que vai ser chamada atravez do evento
 @app.callback(
     Output('grafico_linguagem', 'figure'),
-    [input('dropdown_linguages','valeu')]
+    [Input('dropdown_linguagens','value')]
 )
 def scarter_linguagens(linguagens_selecionadas):
     scarter_trace = []
@@ -55,7 +55,7 @@ def scarter_linguagens(linguagens_selecionadas):
                     y = [conhecimento],
                     mode = 'markers', 
                     name = linguagem.title(),
-                    marker = {'size':15, 'color': cores_map[linguagem]},
+                    marker = {'size':15,'color':cores_map[linguagem]},
                     showlegend=False
                 )
             )
