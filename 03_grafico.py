@@ -12,11 +12,11 @@ dados_conceitos = {
     "javascript":{'Variaveis':6, 'Condicionais':2, 'Loops':4, 'Poo':4, 'Funções':6}
 }
 cores_map = dict(
-    Java = "red",
-    Python = "green",
-    SQl = "yellow",
-    Golang = "blue",
-    Javascript = "pink"
+    java = "red",
+    python = "green",
+    sql = "yellow",
+    goland = "blue",
+    javascript = "pink"
 )
 app = dash.Dash(__name__)
 app.layout = html.Div([
@@ -55,7 +55,7 @@ def scarter_linguagens(linguagens_selecionadas):
                     y = [conhecimento],
                     mode = 'markers', 
                     name = linguagem.title(),
-                    marker = {'size':15,'color':cores_map[linguagem]},
+                    marker={'size':15,'color':cores_map[linguagem]},
                     showlegend=False
                 )
             )
