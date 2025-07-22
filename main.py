@@ -42,14 +42,14 @@ def index():
         <br><br><hr>
         <a href='/consultar'> Consultar Dados <br>
         <a href='/graficos'> Visualizar Graficos <br>
-        <a href='/inadimplencia'> Editar dados de Inadimplencia <br>
+        <a href='/editar_inadimplencia'> Editar dados de Inadimplencia <br>
         <a href='/correlacao'> Analisar a Correlação <br>
             
     ''')
 
 @app.route('/upload', methods=['POST','GET'])
 def upload():
-    inad_file = request.files.get('campo_inadimplecia')
+    inad_file = request.files.get('campo_inadimplencia')
     selic_file = request.files.get('campo_selic')
     # verificar se os arquivos de fato foram enviados
     if not inad_file or not selic_file:
@@ -90,7 +90,7 @@ def consultar():
     if request.method == 'POST':
         tabela = request.form.get('campo_tabela')
         if tabela not in ['inadimplencia', 'selic']:
-            return jsonify({'Erro;': 'Tabela é invalida'})
+            return jsonify({'Erro': 'Tabela é invalida'})
         with sqlite3.connect(DB_PATH) as conn:
             df = pd.read_sql_query(f'SELECT * FROM {tabela}', conn)
         return df.to_html(index=False)
