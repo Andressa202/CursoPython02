@@ -14,15 +14,15 @@ def init_db():
         cursor = conn.cursor()
         cursor.execute('''
             CREATE TABLE IF NOT EXISTS inadimplencia(
-                    mes TEXT PRIMARY KEY,
-                    inadimplencia REAL
-                       )
+                mes TEXT PRIMARY KEY,
+                inadimplencia REAL
+                )
         ''')
         cursor.execute('''
-                CREATE TABLE IF NOT EXISTS selic(
-                       mes TEXT PRIMARY KEY,
-                       selic_diaria REAL
-                       )
+            CREATE TABLE IF NOT EXISTS selic (
+                mes TEXT PRIMARY KEY,
+                selic_diaria REAL
+                )
         ''')
         conn.commit()
 
@@ -30,46 +30,47 @@ vazio = 0
 @app.route('/')
 def index():
     return render_template_string('''
-            <h1>Upload de dados Economicos</h1>
-            <form action='/upload' method='POST' enctype='multipart/form-data'>
-                <label for='campo_inadimplencia'> Arquivo de Inadimplencia</label>
-                <input name='campo_inadimplencia' type='file' required><br><br>
+         <h1>Upload de dados Economicos</h1>
+        <form action='/upload' method='POST' enctype='multipart/form-data'>
+            <label for='campo_inadimplencia'> Arquivo de Inadimplencia</label>
+            <input name='campo_inadimplencia' type='file' required><br><br>
                  
-                <label for='campo_selic'>Arquivo Taxa selic</label>
-                <input type='file' name='campo_selic' required><br><br>
-                <input type='submit' value='Fazer Upload'>
-            </form>
-            <br><br><hr>
-            <a href='/consultar'><br> Consultar Dados <br>
-            <a href='/graficos'><br> Visualizar Graficos <br>
-            <a href='/inadimplencia'><br> Editar dados de Inadimplencia
-            <a href='/correlacao'><br> Analisar a Correlação <br>
+            <label for='campo_selic'>Arquivo Taxa selic</label>
+            <input type='file' name='campo_selic' required><br><br>
+            <input type='submit' value='Fazer Upload'>
+         </form>
+        <br><br><hr>
+        <a href='/consultar'> Consultar Dados <br>
+        <a href='/graficos'> Visualizar Graficos <br>
+        <a href='/inadimplencia'> Editar dados de Inadimplencia <br>
+        <a href='/correlacao'> Analisar a Correlação <br>
             
-        ''')
+    ''')
 
-@app.route('/upload', methods=['POST', 'GET'])
+@app.route('/upload', methods=['POST','GET'])
 def upload():
     inad_file = request.files.get('campo_inadimplecia')
     selic_file = request.files.get('campo_selic')
     # verificar se os arquivos de fato foram enviados
     if not inad_file or not selic_file:
         return jsonify({'Erro':'Ambos os arquivos dever ser enviados'})
+    
     inad_df = pd.read_csv(
         inad_file, 
-        sep = ';', 
-        names = ['data', 'inadimplencia'],
+        sep =';', 
+        names =['data', 'inadimplencia'],
         header = 0 
     )
 
     selic_df = pd.read_csv(
         selic_file,
         sep = ';',
-        names = ['data', 'selic'],
+        names = ['data', 'selic_diaria'],
         header = 0 
     )
     # formata o campo de data como datahora padrão
-    inad_df['data'] = pd.to_datetime(inad_df['data'], format = '%d/%m/%Y')
-    selic_df['data'] = pd.to_datetime(selic_df['data'], format = '%d/%m/%Y')
+    inad_df['data'] = pd.to_datetime(inad_df['data'], format='%d/%m/%Y')
+    selic_df['data'] = pd.to_datetime(selic_df['data'], format='%d/%m/%Y')
     # gera uma coluna nova mes e preenche de acordo com a data
     inad_df['mes'] = inad_df['data'].dt.to_period('M').astype(str)
     selic_df['mes'] = selic_df['data'].dt.to_period('M').astype(str)
