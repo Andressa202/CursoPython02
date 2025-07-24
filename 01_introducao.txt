@@ -1,0 +1,5 @@
+https://colab.research.google.com/drive/1J4mQZ5DHg3iZ499sWP2Idk0e1wqjWUBk?usp=sharing
+
+
+https://plotly.com/examples/
+https://dash.gallery/dash-daq-satellite-dashboard/?_gl=1*eddhhh*_gcl_au*MTQ5NTAwMDc1My4xNzUzMzYxMDk0*_ga*MTc3OTg5NTA4My4xNzUzMzYxMDkw*_ga_6G7EE0JNSC*czE3NTMzNjEwODkkbzEkZzEkdDE3NTMzNjExNjYkajYwJGwwJGgw
