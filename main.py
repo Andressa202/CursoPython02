@@ -436,7 +436,7 @@ def insights_3d():
             opacity = 0.9
         ),
         text = [
-            f'Mês: {m}<br><Inadimplencia:{z:.2f}%<br>Selic: {y:.2f}<br>Var Inad {vi:.2f}<br> Var Selic: {vs:.2f}<br>Tendencia{t}'
+            f'Mês: {m}<br>Inadimplencia:{z:.2f}%<br>Selic: {y:.2f}<br> Var Inad: {vi:.2f} <br> Var Selic: {vs:.2f} <br>Tendencia{t}'
             for m, z, y, vi, vs, t in zip(
                 merged['mes'], merged['inadimplencia'], merged['selic_diaria'], merged['var_inad'], merged['var_selic'], trend_color
             )
