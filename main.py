@@ -30,8 +30,7 @@ def init_db():
                 )
         ''')
         conn.commit()
-
-vazio = 0
+        
 @app.route('/')
 def index():
     return render_template_string('''
