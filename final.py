@@ -29,7 +29,7 @@ def clean_data(df,numeric_columns):
         df = df.dropna()
         #garantir que as colunas numéricas sejam convertidas corretamente.
         for column in numeric_columns:
-            df[column] = pd.to_numeric(df[column], erros='coerce')
+            df[column] = pd.to_numeric(df[column], errors='coerce')
         print("Dados limpos com sucesso")
         return df 
     except Exception as e:
