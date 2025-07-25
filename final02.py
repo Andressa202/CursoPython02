@@ -1,15 +1,16 @@
-from flask import Flask, render_template_string
+from flask import Flask, request,  render_template_string
 import pandas as pd 
 import sqlite3
 import plotly.express as px 
 import plotly.io as pio
-import random
+import os
 
 #configura o plotly para abrir os arquivos no navegador por padrão
 pio.renderers.default = 'browser'
 
 # carregar o drinks.csv
-df = pd.read_csv('drinks.csv')
+script_dir = os.path.dirname(os.path.abspath(__file__))
+df = pd.read_csv(os.path.join(script_dir,'drinks.csv'))
 
 # cria o banco de dados em sql e popular com os dados do arquivo csv
 conn = sqlite3.connect('consumo_alcool.db')
