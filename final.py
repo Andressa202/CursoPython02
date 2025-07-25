@@ -39,9 +39,9 @@ avengers_df = clean_data(avengers_df, ['Appearances'])
 #limpar a tabela drinks
 drinks_df = clean_data(drinks_df, ['beer_servings', 'spirit_servings', 'wine_servings', 'total_litres_of_pure_alcohol'])
 #verificação dos dados após a limpeza
-print('\nAvengers DataFrame após limpeza')
+print('\nAvengers DataFrame após a limpeza')
 print(avengers_df.head())
-print('\nDrinks DataFRame após limpeza')
+print('\nDrinks DataFrame após a limpeza')
 print(drinks_df.head())
 
 # Etapa 3 vamos analisar os dados 
@@ -91,7 +91,7 @@ app.layout= html.Div([
    
 # função de callback para atualizar o grafico baseado na escolha do dropdown
 @app.callback(
-    Output('gragh-output', 'figure'),
+    Output('graph-output', 'figure'),
     [Input('dropdown-chart', 'value')]
 )
 
