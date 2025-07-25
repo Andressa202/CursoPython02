@@ -1,51 +1,131 @@
-﻿Titulo,Direção,Elenco,Nota,link
-O Poderoso Chefão,N/A,,4.8,https://www.adorocinema.com/filmes/filme-1628/
-Um Sonho de Liberdade,N/A,,4.8,https://www.adorocinema.com/filmes/filme-11736/
-A Lista de Schindler,N/A,,3.9,https://www.adorocinema.com/filmes/filme-9393/
-Forrest Gump - O Contador de Histórias,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10568/
-O Rei Leão,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10862/
-À Espera de um Milagre,N/A,,4.7,https://www.adorocinema.com/filmes/filme-22779/
-O Senhor dos Anéis - O Retorno do Rei,N/A,,4.7,https://www.adorocinema.com/filmes/filme-39187/
-A Vida é Bela,N/A,,4.7,https://www.adorocinema.com/filmes/filme-64439/
-Batman - O Cavaleiro Das Trevas,N/A,,4.7,https://www.adorocinema.com/filmes/filme-115362/
-Vingadores: Ultimato,N/A,,3.9,https://www.adorocinema.com/filmes/filme-232669/
-O Poderoso Chefão,N/A,,4.8,https://www.adorocinema.com/filmes/filme-1628/
-Um Sonho de Liberdade,N/A,,4.8,https://www.adorocinema.com/filmes/filme-11736/
-A Lista de Schindler,N/A,,3.9,https://www.adorocinema.com/filmes/filme-9393/
-Forrest Gump - O Contador de Histórias,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10568/
-O Rei Leão,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10862/
-À Espera de um Milagre,N/A,,4.7,https://www.adorocinema.com/filmes/filme-22779/
-O Senhor dos Anéis - O Retorno do Rei,N/A,,4.7,https://www.adorocinema.com/filmes/filme-39187/
-A Vida é Bela,N/A,,4.7,https://www.adorocinema.com/filmes/filme-64439/
-Batman - O Cavaleiro Das Trevas,N/A,,4.7,https://www.adorocinema.com/filmes/filme-115362/
-Vingadores: Ultimato,N/A,,3.9,https://www.adorocinema.com/filmes/filme-232669/
-O Poderoso Chefão,N/A,,4.8,https://www.adorocinema.com/filmes/filme-1628/
-Um Sonho de Liberdade,N/A,,4.8,https://www.adorocinema.com/filmes/filme-11736/
-A Lista de Schindler,N/A,,3.9,https://www.adorocinema.com/filmes/filme-9393/
-Forrest Gump - O Contador de Histórias,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10568/
-O Rei Leão,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10862/
-À Espera de um Milagre,N/A,,4.7,https://www.adorocinema.com/filmes/filme-22779/
-O Senhor dos Anéis - O Retorno do Rei,N/A,,4.7,https://www.adorocinema.com/filmes/filme-39187/
-A Vida é Bela,N/A,,4.7,https://www.adorocinema.com/filmes/filme-64439/
-Batman - O Cavaleiro Das Trevas,N/A,,4.7,https://www.adorocinema.com/filmes/filme-115362/
-Vingadores: Ultimato,N/A,,3.9,https://www.adorocinema.com/filmes/filme-232669/
-O Poderoso Chefão,N/A,,4.8,https://www.adorocinema.com/filmes/filme-1628/
-Um Sonho de Liberdade,N/A,,4.8,https://www.adorocinema.com/filmes/filme-11736/
-A Lista de Schindler,N/A,,3.9,https://www.adorocinema.com/filmes/filme-9393/
-Forrest Gump - O Contador de Histórias,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10568/
-O Rei Leão,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10862/
-À Espera de um Milagre,N/A,,4.7,https://www.adorocinema.com/filmes/filme-22779/
-O Senhor dos Anéis - O Retorno do Rei,N/A,,4.7,https://www.adorocinema.com/filmes/filme-39187/
-A Vida é Bela,N/A,,4.7,https://www.adorocinema.com/filmes/filme-64439/
-Batman - O Cavaleiro Das Trevas,N/A,,4.7,https://www.adorocinema.com/filmes/filme-115362/
-Vingadores: Ultimato,N/A,,3.9,https://www.adorocinema.com/filmes/filme-232669/
-O Poderoso Chefão,N/A,,4.8,https://www.adorocinema.com/filmes/filme-1628/
-Um Sonho de Liberdade,N/A,,4.8,https://www.adorocinema.com/filmes/filme-11736/
-A Lista de Schindler,N/A,,3.9,https://www.adorocinema.com/filmes/filme-9393/
-Forrest Gump - O Contador de Histórias,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10568/
-O Rei Leão,N/A,,4.7,https://www.adorocinema.com/filmes/filme-10862/
-À Espera de um Milagre,N/A,,4.7,https://www.adorocinema.com/filmes/filme-22779/
-O Senhor dos Anéis - O Retorno do Rei,N/A,,4.7,https://www.adorocinema.com/filmes/filme-39187/
-A Vida é Bela,N/A,,4.7,https://www.adorocinema.com/filmes/filme-64439/
-Batman - O Cavaleiro Das Trevas,N/A,,4.7,https://www.adorocinema.com/filmes/filme-115362/
-Vingadores: Ultimato,N/A,,3.9,https://www.adorocinema.com/filmes/filme-232669/
+﻿Titulo,Direção,Elenco,Nota,link,Ano,Categoria
+O Poderoso Chefão,"Direção:
+Francis Ford Coppola",,4.8,https://www.adorocinema.com/filmes/filme-1628/,24 de março de 1972,N/A
+Um Sonho de Liberdade,"Direção:
+Frank Darabont",,4.8,https://www.adorocinema.com/filmes/filme-11736/,25 de janeiro de 1995,N/A
+A Lista de Schindler,"Direção:
+Steven Spielberg",,3.9,https://www.adorocinema.com/filmes/filme-9393/,31 de dezembro de 1993,N/A
+Forrest Gump - O Contador de Histórias,"Direção:
+Robert Zemeckis",,4.7,https://www.adorocinema.com/filmes/filme-10568/,7 de dezembro de 1994,N/A
+O Rei Leão,"Direção:
+Roger Allers
+                                                                                                                    
+                                                                
+                                            Rob Minkoff",,4.7,https://www.adorocinema.com/filmes/filme-10862/,8 de julho de 1994,N/A
+À Espera de um Milagre,"Direção:
+Frank Darabont",,4.7,https://www.adorocinema.com/filmes/filme-22779/,10 de março de 2000,N/A
+O Senhor dos Anéis - O Retorno do Rei,"Direção:
+Peter Jackson",,4.7,https://www.adorocinema.com/filmes/filme-39187/,25 de dezembro de 2003,N/A
+A Vida é Bela,"Direção:
+Roberto Benigni",,4.7,https://www.adorocinema.com/filmes/filme-64439/,5 de fevereiro de 1999,N/A
+Batman - O Cavaleiro Das Trevas,"Direção:
+Christopher Nolan",,4.7,https://www.adorocinema.com/filmes/filme-115362/,18 de julho de 2008,N/A
+Vingadores: Ultimato,"Direção:
+Joe Russo
+                                                                                                                    
+                                                                
+                                            Anthony Russo",,3.9,https://www.adorocinema.com/filmes/filme-232669/,25 de abril de 2019,N/A
+O Poderoso Chefão,"Direção:
+Francis Ford Coppola",,4.8,https://www.adorocinema.com/filmes/filme-1628/,24 de março de 1972,N/A
+Um Sonho de Liberdade,"Direção:
+Frank Darabont",,4.8,https://www.adorocinema.com/filmes/filme-11736/,25 de janeiro de 1995,N/A
+A Lista de Schindler,"Direção:
+Steven Spielberg",,3.9,https://www.adorocinema.com/filmes/filme-9393/,31 de dezembro de 1993,N/A
+Forrest Gump - O Contador de Histórias,"Direção:
+Robert Zemeckis",,4.7,https://www.adorocinema.com/filmes/filme-10568/,7 de dezembro de 1994,N/A
+O Rei Leão,"Direção:
+Roger Allers
+                                                                                                                    
+                                                                
+                                            Rob Minkoff",,4.7,https://www.adorocinema.com/filmes/filme-10862/,8 de julho de 1994,N/A
+À Espera de um Milagre,"Direção:
+Frank Darabont",,4.7,https://www.adorocinema.com/filmes/filme-22779/,10 de março de 2000,N/A
+O Senhor dos Anéis - O Retorno do Rei,"Direção:
+Peter Jackson",,4.7,https://www.adorocinema.com/filmes/filme-39187/,25 de dezembro de 2003,N/A
+A Vida é Bela,"Direção:
+Roberto Benigni",,4.7,https://www.adorocinema.com/filmes/filme-64439/,5 de fevereiro de 1999,N/A
+Batman - O Cavaleiro Das Trevas,"Direção:
+Christopher Nolan",,4.7,https://www.adorocinema.com/filmes/filme-115362/,18 de julho de 2008,N/A
+Vingadores: Ultimato,"Direção:
+Joe Russo
+                                                                                                                    
+                                                                
+                                            Anthony Russo",,3.9,https://www.adorocinema.com/filmes/filme-232669/,25 de abril de 2019,N/A
+O Poderoso Chefão,"Direção:
+Francis Ford Coppola",,4.8,https://www.adorocinema.com/filmes/filme-1628/,24 de março de 1972,N/A
+Um Sonho de Liberdade,"Direção:
+Frank Darabont",,4.8,https://www.adorocinema.com/filmes/filme-11736/,25 de janeiro de 1995,N/A
+A Lista de Schindler,"Direção:
+Steven Spielberg",,3.9,https://www.adorocinema.com/filmes/filme-9393/,31 de dezembro de 1993,N/A
+Forrest Gump - O Contador de Histórias,"Direção:
+Robert Zemeckis",,4.7,https://www.adorocinema.com/filmes/filme-10568/,7 de dezembro de 1994,N/A
+O Rei Leão,"Direção:
+Roger Allers
+                                                                                                                    
+                                                                
+                                            Rob Minkoff",,4.7,https://www.adorocinema.com/filmes/filme-10862/,8 de julho de 1994,N/A
+À Espera de um Milagre,"Direção:
+Frank Darabont",,4.7,https://www.adorocinema.com/filmes/filme-22779/,10 de março de 2000,N/A
+O Senhor dos Anéis - O Retorno do Rei,"Direção:
+Peter Jackson",,4.7,https://www.adorocinema.com/filmes/filme-39187/,25 de dezembro de 2003,N/A
+A Vida é Bela,"Direção:
+Roberto Benigni",,4.7,https://www.adorocinema.com/filmes/filme-64439/,5 de fevereiro de 1999,N/A
+Batman - O Cavaleiro Das Trevas,"Direção:
+Christopher Nolan",,4.7,https://www.adorocinema.com/filmes/filme-115362/,18 de julho de 2008,N/A
+Vingadores: Ultimato,"Direção:
+Joe Russo
+                                                                                                                    
+                                                                
+                                            Anthony Russo",,3.9,https://www.adorocinema.com/filmes/filme-232669/,25 de abril de 2019,N/A
+O Poderoso Chefão,"Direção:
+Francis Ford Coppola",,4.8,https://www.adorocinema.com/filmes/filme-1628/,24 de março de 1972,N/A
+Um Sonho de Liberdade,"Direção:
+Frank Darabont",,4.8,https://www.adorocinema.com/filmes/filme-11736/,25 de janeiro de 1995,N/A
+A Lista de Schindler,"Direção:
+Steven Spielberg",,3.9,https://www.adorocinema.com/filmes/filme-9393/,31 de dezembro de 1993,N/A
+Forrest Gump - O Contador de Histórias,"Direção:
+Robert Zemeckis",,4.7,https://www.adorocinema.com/filmes/filme-10568/,7 de dezembro de 1994,N/A
+O Rei Leão,"Direção:
+Roger Allers
+                                                                                                                    
+                                                                
+                                            Rob Minkoff",,4.7,https://www.adorocinema.com/filmes/filme-10862/,8 de julho de 1994,N/A
+À Espera de um Milagre,"Direção:
+Frank Darabont",,4.7,https://www.adorocinema.com/filmes/filme-22779/,10 de março de 2000,N/A
+O Senhor dos Anéis - O Retorno do Rei,"Direção:
+Peter Jackson",,4.7,https://www.adorocinema.com/filmes/filme-39187/,25 de dezembro de 2003,N/A
+A Vida é Bela,"Direção:
+Roberto Benigni",,4.7,https://www.adorocinema.com/filmes/filme-64439/,5 de fevereiro de 1999,N/A
+Batman - O Cavaleiro Das Trevas,"Direção:
+Christopher Nolan",,4.7,https://www.adorocinema.com/filmes/filme-115362/,18 de julho de 2008,N/A
+Vingadores: Ultimato,"Direção:
+Joe Russo
+                                                                                                                    
+                                                                
+                                            Anthony Russo",,3.9,https://www.adorocinema.com/filmes/filme-232669/,25 de abril de 2019,N/A
+O Poderoso Chefão,"Direção:
+Francis Ford Coppola",,4.8,https://www.adorocinema.com/filmes/filme-1628/,24 de março de 1972,N/A
+Um Sonho de Liberdade,"Direção:
+Frank Darabont",,4.8,https://www.adorocinema.com/filmes/filme-11736/,25 de janeiro de 1995,N/A
+A Lista de Schindler,"Direção:
+Steven Spielberg",,3.9,https://www.adorocinema.com/filmes/filme-9393/,31 de dezembro de 1993,N/A
+Forrest Gump - O Contador de Histórias,"Direção:
+Robert Zemeckis",,4.7,https://www.adorocinema.com/filmes/filme-10568/,7 de dezembro de 1994,N/A
+O Rei Leão,"Direção:
+Roger Allers
+                                                                                                                    
+                                                                
+                                            Rob Minkoff",,4.7,https://www.adorocinema.com/filmes/filme-10862/,8 de julho de 1994,N/A
+À Espera de um Milagre,"Direção:
+Frank Darabont",,4.7,https://www.adorocinema.com/filmes/filme-22779/,10 de março de 2000,N/A
+O Senhor dos Anéis - O Retorno do Rei,"Direção:
+Peter Jackson",,4.7,https://www.adorocinema.com/filmes/filme-39187/,25 de dezembro de 2003,N/A
+A Vida é Bela,"Direção:
+Roberto Benigni",,4.7,https://www.adorocinema.com/filmes/filme-64439/,5 de fevereiro de 1999,N/A
+Batman - O Cavaleiro Das Trevas,"Direção:
+Christopher Nolan",,4.7,https://www.adorocinema.com/filmes/filme-115362/,18 de julho de 2008,N/A
+Vingadores: Ultimato,"Direção:
+Joe Russo
+                                                                                                                    
+                                                                
+                                            Anthony Russo",,3.9,https://www.adorocinema.com/filmes/filme-232669/,25 de abril de 2019,N/A

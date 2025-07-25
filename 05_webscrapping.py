@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup
 import pandas as pd 
 import time 
+import random 
+import sqlite3
 
 # Headers para simular um navegador real 
 headers = {
@@ -31,8 +33,8 @@ for pagina in range(1,6):
             filme_soup = BeautifulSoup(filme_response.text, "html.parser")
 
             #diretor 
-            diretor_tag = filme_soup.find("div", class_="meta-body-direction").find("a")
-            diretor = diretor_tag.text.strip() if diretor_tag else "N/A"
+            diretor_tag = filme_soup.find("div", class_="meta-body-item meta-body-direction meta-body-oneline")
+            diretor = diretor_tag.text.strip().replace(',','').replace('|','').strip()if diretor_tag else "N/A"
 
             # elenco
             elenco_tags = filme_soup.find_all("div", class_="meta-body-actor")
@@ -41,6 +43,16 @@ for pagina in range(1,6):
                 atores = tag.find_all("a")
                 elenco.extend([a.text.strip() for a in atores])
             elenco_str = ",".join(elenco[:4]) # limita aos primeiros 5 atores
+                #categoria
+            genero_block = filme_soup.find("div", class_="meta-body-info")
+            if genero_block:
+                genero_links = genero_block.find_all("a")
+                generos = [g.text.strip() for g in genero_links]
+                categoria = ",".join(generos[:3]) if generos else "N/A"
+
+            #ano de lançamento
+            ano_tag = genero_block.find("span", class_="date") if genero_block else None
+            ano = ano_tag.text.strip() if ano_tag else "N/A"
         else:
             diretor = "N/A"
             elenco_str = "N/A"
@@ -50,11 +62,45 @@ for pagina in range(1,6):
             "Direção": diretor,
             "Elenco":elenco_str,
             "Nota": nota,
-            "link": link
+            "link": link,
+            "Ano" : ano,
+            "Categoria" : categoria
         })
-        time.sleep(1)
-    time.sleep(3)
+        time.sleep(random.uniform(1,3))
+    time.sleep(random.uniform(2,4))
 
 df = pd.DataFrame(filmes)
 print(df.head())
 df.to_csv("filmes_adorocinema.csv", index=False, encoding="utf-8-sig")
+
+conn = sqlite3.connect("filmes_adorocinema.db")
+cursor = conn.cursor()
+cursor.execute('''
+    CREATE TABLE IF NOT EXISTS filmes (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        titulo TEXT,
+        direcao TEXT,
+        elenco TEXT,
+        nota TEXT,
+        link TEXT,
+        ano TEXT,
+        categoria TEXT
+        )
+''')
+
+# aqui vamos inserir os dados no banco de dados
+for filme in filmes:
+    cursor.execute('''
+        INSERT INTO filmes (titulo, direcao, elenco, nota, link, ano, categoria) VALUES(?,?,?,?,?,?,?)
+''',(
+    filme["titulo"],
+    filme["direcao"],
+    filme["elenco"],
+    filme(filme["nota"]) if filme ['nota'] != 'N/A' else None,
+    filme["link"],
+    filme["ano"],
+    filme["categoria"]
+))
+conn.commit()
+conn.close()
+print('Dados salvos com sucesso no banco de dados SQLite!')
